@@ -134,7 +134,9 @@ input[type=range]{accent-color:var(--accent);}
   <div class="search-block">
     <div class="search-row">
       <div class="addr-wrap">
-        <input class="addr-input" id="addr" placeholder="Start typing an address..." autocomplete="off" type="search" name="hunks-search"/>
+        <form autocomplete="off" onsubmit="return false;" style="width:100%;margin:0;padding:0;">
+          <input class="addr-input" id="addr" placeholder="Start typing an address..." autocomplete="off" type="text"/>
+        </form>
       </div>
       <input class="api-input" id="apikey" value="AIzaSyD91MTKJUEFuoVw0CrPeW7suuIU0s9XyZk" style="display:none;"/>
       <button class="scan-btn" id="scan-btn" onclick="runScan()">▶ Scan property</button>
